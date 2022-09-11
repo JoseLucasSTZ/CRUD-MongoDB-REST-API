@@ -20,7 +20,8 @@
   },
   "homepage": "https://github.com/joselucasSteinmetz/CRUD-API-mongo-db#readme",
   "dependencies": {
-    "express": "^4.17.3"
+    "express": "^4.17.3",
+    "mongoose": "^6.6.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.19"
