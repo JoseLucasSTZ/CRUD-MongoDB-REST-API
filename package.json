@@ -1,0 +1,26 @@
+{
+  "name": "crud-api-mongo-db",
+  "version": "1.0.0",
+  "description": "This is a simple project where I connect atlas to a nodejs express server and then implemen CRUD features",
+  "main": "server.js",
+  "type":"module",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joselucasSteinmetz/CRUD-API-mongo-db.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joselucasSteinmetz/CRUD-API-mongo-db/issues"
+  },
+  "homepage": "https://github.com/joselucasSteinmetz/CRUD-API-mongo-db#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "nodemon": "^2.0.19"
+  }
+}
