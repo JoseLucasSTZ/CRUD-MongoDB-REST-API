@@ -1,6 +1,5 @@
 import express from "express";
 import db from "./config/dbConnect.js"
-import livros from "./models/Livros.js"
 import routes from "./routes/index.js"
 
 
@@ -9,13 +8,14 @@ db.once("open", () => {
     console.log('conexão com banco feita com sucesso')
 })
 
-
 const app = express();
-
 app.use(express.json());
-
 routes(app);
 
+export default app
+
+
+/* Como fazer um BD em memória:
 app.get('/livros', (req, res) => {
     livros.find((err, livros) => {
         res.status(200).json(livros)
@@ -28,6 +28,7 @@ app.get('/livros/:id', (req, res) => {
 })
 
 
+ 
 app.put('/livros/:id', (req, res) => {
     let index = buscaLivro(req.params.id);
     livros[index].titulo = req.body.titulo;
@@ -42,8 +43,7 @@ app.delete('/livros/:id', (req, res) => {
 
 })
 
+
 function buscaLivro(id) {
     return livros.findIndex(livro => livro.id == id)
-}
-
-export default app
+}*/
