@@ -43,6 +43,13 @@ class LivrosController {
              }
         })
     }
+
+    static listarLivroPorAutor = (req, res) => {
+        const autor = req.query.autor
+        livros.find({'autor': autor }, {}, (err, livros) => {
+            res.status(200).send(livros);
+        })
+    }
 }
 
 export default LivrosController;
